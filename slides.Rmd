@@ -137,7 +137,7 @@ count: false
   3. Are there environmental consequences? (**Probably**)
 
 ---
-
+count: false
 class: inverse, center, middle
 
 # Introduction
@@ -247,7 +247,7 @@ energy %>%
 
 - `r Citet(bib, c("johnsen1999zonal", "hjalmarsson2000nordpool", "steen2004bottlenecks", "kauppi2008empirical", "fridolfsson2009market", "mirza2012transmission"))`
 
-### This sudy
+### This study
 
 - Advantageous research design, combined with plant-level data. Richer variation in market power over longer period of time. (He said modestly.)
 
@@ -257,7 +257,7 @@ energy %>%
 - I find direct evidence of strategic, intertemporal firm behaviour over longer periods of time.
 
 ---
-
+count: false
 class: inverse, center, middle
 
 # Theory
@@ -290,6 +290,7 @@ name: theory
 - Implies an observable difference in reservoir management. 
 
 ---
+count: false
 class: inverse, center, middle
 
 # Institutional features
@@ -329,7 +330,7 @@ price contracts that may be terminated at short notice.
 ### Role of transmission constraints
 - Not binding: Common system price in all areas.
 - Binding: Areas become their own markets.
-  - Creates opportunities for exploiting local market power.
+- Creates opportunities for exploiting local market power.
 
 ---
 
@@ -352,90 +353,18 @@ price contracts that may be terminated at short notice.
 </div>
 
 ---
-class: center, middle
-
-(Let's have a look at the live version. I'm going to point out two "layers" of variation.)
-
----
-# Layer 1: Transmission constraints
-
-<!-- 
-Old code:
-<iframe  align="center" width="750" height="500" frameBorder="0"
-src="http://driftsdata.statnett.no/Web/Map/snpscustom?language=en"></iframe>
-
-New code base on:
-https://collaboration133.com/how-to-scale-iframe-content-in-ie-chrome-firefox-and-safari/2717/ 
--->
-
-<style>
-#scaled-frame { width: 1000px; height: 650px; border: 0px; }
-#scaled-frame {
-    zoom: 0.75;
-    -moz-transform: scale(0.75);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(0.75);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.75);
-    -webkit-transform-origin: 0 0;
-    }
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
- #scaled-frame  { zoom: 1;  }
-}
-</style>
-
-<div id="wrapper"><iframe id="scaled-frame" src="http://driftsdata.statnett.no/Web/Map/snpscustom?language=en"></iframe></div>
-
-<a href="http://driftsdata.statnett.no/Web/Map/snpscustom?language=en" target="_blank">Link</a>. [Stills](#prices-flows-stills).
-
----
-
-# Layer 2: Changing area definitions
-
-<iframe  align="center" width="750" height="488" frameBorder="0"
-src="http://www.statnett.no/en/Market-and-operations/the-power-market/"></iframe>
-
-<!--
-New code base on:
-https://collaboration133.com/how-to-scale-iframe-content-in-ie-chrome-firefox-and-safari/2717/ 
-
-
-<style>
-#scaled-frame { width: 1000px; height: 650px; border: 0px; }
-#scaled-frame {
-    zoom: 0.75;
-    -moz-transform: scale(0.75);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(0.75);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.75);
-    -webkit-transform-origin: 0 0;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
- #scaled-frame  { zoom: 1;  }
-}
-</style>
-
-<div id="wrapper"><iframe id="scaled-frame" src="http://www.statnett.no/en/Market-and-operations/the-power-market/"></iframe></div>
--->
-
-<a href="http://www.statnett.no/en/Market-and-operations/the-power-market/" target="_blank">Link</a>. [Stills](#config-stills).
-
----
-name:identification2
+name:identification
 
 # Identification
 
 ### Two layers of exogenous variation
   
-### 1. Transmission constraints</span>
+### 1. Transmission constraints (<a href="http://driftsdata.statnett.no/Web/Map/snpscustom?language=en" target="_blank">Link</a>. [Stills](#prices-flows-stills).)
 - The ultimate mechanism for changes in market power.
 - *Why* do firms gain/lose local market power?
 - Exogeneity: Physical nature of electricity, geography.
 
-### 2. Bidding area (re)configuration
+### 2. Bidding area (re)configuration (</span> <a href="http://www.statnett.no/en/Market-and-operations/the-power-market/" target="_blank">Link</a>. [Stills](#config-stills).)
 - Adds richness by affecting the [magnitude](#variation) of change.
 - *How much* market power do firms get?
 - Exogeneity: Maintenance, new regions, climate, geography.
@@ -449,6 +378,7 @@ Together, these layers allow me to trace out the response of individual plants a
 - Control for potential problems that arise from changing demand by using zone and regime fixed effects.
  
 ---
+count: false
 class: inverse, center, middle
 
 # Data
@@ -533,6 +463,7 @@ leaflet(data = mapNorway) %>%
 ```
 
 ---
+count: false
 class: inverse, center, middle
 
 # Econometrics
@@ -577,7 +508,7 @@ where, for reservoir $i$ belonging to firm $f$ on day $t$,
 Primarily interested in the $\color{red}\gamma_m$ parameters on the interacted market share variable.
 
 ---
-
+count: false
 class: inverse, center, middle
 
 # Results
@@ -837,7 +768,7 @@ welfare %>%
 
 
 ---
-
+count: false
 class: inverse, center, middle
 
 # Conclusions
@@ -885,7 +816,6 @@ background-size: 100% 50%
 ]
 
 ---
-
 count: false
 class: inverse, center, middle
 
@@ -976,7 +906,7 @@ count: false
 # Area prices and bottlenecks
 
 ![](pics/prices-flows-zoom.png)
-.right[[Go back](#data).]
+.right[[Go back](#identification).]
 
 ---
 count: false
@@ -1006,7 +936,7 @@ count: false
 # Changing area (market) definitions
 
 ![](pics/config4.png)
-.right[[Go back](#data).]
+.right[[Go back](#identification).]
 
 ---
 name: variation
